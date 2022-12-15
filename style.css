@@ -1,0 +1,100 @@
+
+
+
+.toppart{
+   border: 1px solid red;
+   width: 100%; 
+}
+.blackone{
+    border: 1px solid rgb(24, 23, 23);
+    width: 100%;
+}
+.navbar{
+    border: 1px solid rgb(24, 23, 23);
+    width: 100%;
+    padding: 0px 16px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    
+
+}
+.left-part{
+    display: flex;
+    height: 64px;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.category{
+    display: flex;
+    height: 64px;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+.searchbar{
+    display: flex;
+}
+.searchbaricon{
+    background:url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -310px -41px;
+    width: 50px;
+    height: 100%;
+    border: 1px solid blue;
+
+}
+
+
+.right-part{
+  
+    display: flex;
+    height: 64px;
+    border:2px solid red;
+    width: 30%;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+#slideshow{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+
+}
+#slideshow > img {
+    width: 100%;
+
+}
+#afterslideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    border: 1px solid red;
+}
+.h2heading {
+    font-size: 18px;
+    
+    padding-top: 24px;
+    margin-bottom: 12px;
+}
+
+.h2heading  h2{
+    font-weight: 700;
+    line-height: 26px;
+}
+.h2heading  span{
+    width: 40px;
+    border-bottom: 3px solid #faa619;
+}
