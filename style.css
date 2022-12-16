@@ -14,7 +14,9 @@ body {
 }
 .nav {
     background-color: rgb(229, 221, 221);
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    top: 0px;
     font-size: 14px;
     
     font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
@@ -172,3 +174,44 @@ body {
     border-bottom: 3px solid #faa619;
     box-sizing: border-box;
 }
+
+#OurBenefits {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+#OurBenefits > img {
+    width: 100%;
+}
+.UnmissableOfferstype {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+.UnmissableOfferstype > img {
+    width: 100%;
+}
+
+.fulllength {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.fulllength > img {
+    width: 100%;
+}
+.Watches > img {
+    height: 450px;
+    border-radius: 10px;
+}
+
+
