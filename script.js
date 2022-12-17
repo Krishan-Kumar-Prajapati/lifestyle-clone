@@ -14,3 +14,32 @@ myimg.setAttribute("src",arrslideshow[i]);
 slideshow.append(myimg);
 
 },5000);
+
+let categoryname=document.getElementById("categoryname");
+let categoryimage=document.getElementById("categoryimage");
+let womenbtn=document.getElementById("womenbtn");
+let menbtn=document.getElementById("menbtn");
+let kidsbtn=document.getElementById("kidsbtn");
+let shoesandbagsbtn=document.getElementById("shoesandbagsbtn");
+let beautybtn=document.getElementById("beautybtn");
+
+let dataforTopCategories=["https://lmsin.net/cdn-cgi/image/w=195,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Women-Desk-Category-Banner2-14Oct22.jpg","https://lmsin.net/cdn-cgi/image/w=195,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LSUber-Men-Desk-Category-Banner2-14Oct22.jpg","https://lmsin.net/cdn-cgi/image/w=195,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LSUber-Kids-Desk-Category-Banner1-14Oct22.jpg",""];
+
+womenbtn.addEventListener("click",function(){
+    categoryname.innerText="Women";
+
+
+});
+menbtn.addEventListener("click",function(){
+
+});
+kidsbtn.addEventListener("click",function(){
+
+});
+shoesandbagsbtn.addEventListener("click",function(){
+
+});
+beautybtn.addEventListener("click",function(){
+
+});
+
