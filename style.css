@@ -156,6 +156,7 @@ a:active{
     color: #bd7c0b;
 }
 
+
 #yellowline {
     background-color: #faa619;
     color: #faa619;
@@ -194,7 +195,7 @@ a:active{
     align-items: center;
     margin: auto;
     width: 90%;
-    border: 1px solid red;
+    
     box-sizing: border-box;
 }
 #afterslideshow > img {
@@ -204,7 +205,7 @@ a:active{
 .majordiv {
     width: 90%;
     margin: auto;
-    border: 2px solid red;
+   
     box-sizing: border-box;
 }
 
@@ -257,7 +258,7 @@ a:active{
     align-items: center;
     margin: auto;
     width: 100%;
-    border: 1px solid red;
+    
     box-sizing: border-box;
 }
 .fulllength > img {
@@ -271,7 +272,7 @@ a:active{
     width: 100%;
     display: flex;
     /* align-items: flex-start; */
-    border: 2px solid red;
+    
 }
 #leftportion {
     width: 20%;
@@ -291,7 +292,7 @@ a:active{
 }
 #rightportion {
     width: 80%;
-    border: 2px solid black;
+    
     
     
 }
@@ -299,8 +300,7 @@ a:active{
     width: 100%;
     display: flex;
     
-    background-color: #bd7c0b;
-    border: 2px solid blue;
+    margin-left: 20px;
     
     
     
@@ -318,6 +318,7 @@ a:active{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 10px;
+    margin-left: 20px;
 }
 #categoryimage img {
     width: 100%;
@@ -332,7 +333,7 @@ a:active{
     width: 100%;
    
     /* align-items: flex-start; */
-    border: 2px solid red;
+
 }
 #topportion1 {
     width: 100%;
@@ -363,7 +364,7 @@ a:active{
 
 #bottomportion1 {
     width: 100%;
-    border: 2px solid black;
+   
     margin-top: 50px;
     
     
@@ -473,3 +474,118 @@ a:active{
     font-size: 16px;
     margin: 6px;
 }
+#container {
+    display: flex;
+}
+#leftdiv{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+#leftdiv > div {
+display: flex;
+align-items: center;
+}
+
+#leftdiv > div >div:first-child {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #c8c9c6;
+}
+#leftdiv > div >div:last-child > p:first-child {
+    color: #5d5e5c;
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 12px;
+
+
+}
+#leftdiv > div >div:last-child > p:last-child {
+    color: #212121;
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 12px;
+
+
+}
+.reachtous{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#leftdiv > div:first-child > div:first-child > div{
+    width: 24px;
+    height: 24px;
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -270px -104px;
+}
+#leftdiv > div:nth-child(2) > div:first-child > div {
+    width: 24px;
+    height: 24px;
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -311px -103px;   
+}
+#leftdiv > div:nth-child(3) > div:first-child > div {
+    width: 24px;
+    height: 24px;
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -351px -104px;  
+}
+
+
+
+
+#rightdiv{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    margin-right: 20px;
+}
+.socialmedia > div {
+    height: 24px;
+    width: 24px;
+}
+#facebook {
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -390px -104px;
+}
+#twitter {
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -432px -104px;
+}
+#instagram {
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -472px -104px;
+}
+
+#lastsection {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#lastsection > div {
+    height: 50%;
+    margin: 0px 30px;
+}
+#lastsection > div:first-child {
+    
+    margin: 0px 40px;
+}
+#lastsection img {
+    width: 100%;
+}
+
+#lastsection p {
+    color: #5d5e5c;
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 12px;
+}
+
