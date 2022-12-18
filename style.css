@@ -201,7 +201,7 @@ a:active{
     width: 100%;
 }
 
-#majordiv {
+.majordiv {
     width: 90%;
     margin: auto;
     border: 2px solid red;
@@ -283,6 +283,8 @@ a:active{
     text-align: left;
     border: 0px;
     background: transparent;
+    font-size: 20px;
+    font-weight: 400;
 }
 #leftportion button:hover {
     background:azure;
@@ -312,4 +314,162 @@ a:active{
    
     
 }
+#categoryimage {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+#categoryimage img {
+    width: 100%;
+    
 
+}
+#categoryimage h4 {
+    text-align: center;
+    margin: 0px;
+}
+#TopDealsIn{
+    width: 100%;
+   
+    /* align-items: flex-start; */
+    border: 2px solid red;
+}
+#topportion1 {
+    width: 100%;
+    
+}
+#topportion1 button {
+    
+
+    text-align: center;
+    border: 3px solid #5d5e5c;
+    background: transparent;
+    color: #5d5e5c;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 10px;
+
+}
+#topportion1 button:hover {
+    background:#5d5e5c;
+    color:aliceblue;
+    
+    
+    
+   
+}
+
+#bottomportion1 {
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 50px;
+    
+    
+}
+
+
+#categoryimage1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+#categoryimage1 img {
+    width: 100%;
+    
+
+}
+#BigBrandsBigDiscounts {
+    grid-template-columns: repeat(6,1fr);
+}
+
+.breakline{
+    width: 100%;
+    border-top:4px solid #ecedeb;
+    margin:35px 0px;
+
+}
+
+#reachouttous {
+    display: flex;
+    width: 100%;
+}
+#leftpart {
+    width: 60%;
+}
+#leftpart h4 , #rightpart h4 {
+    font-size: 24px;
+    color: #212121;
+}
+#leftpart p , #rightpart p{
+    color: #929391;
+    font-size: 16px;
+}
+#leftpart > p:last-child{
+    color: rgb(242, 81, 57);
+    font-size: 14px;
+}
+
+#leftpart div , #rightpart div {
+    display: flex;
+} 
+#leftpart input{
+    padding: 18px 24px;
+    height: 56px;
+    font-size: 16px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    outline: none;
+    background-color: #F7F8F7;
+    color: #929391;
+    width: 325px;
+    border: 0px;
+
+}
+#leftpart button{
+    height: 56px;
+    font-size: 18px;
+    width: 179px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #000000;
+    color: white;
+}
+
+#rightpart {
+    width: 40%;
+}
+
+#rightpart img {
+    width: 60%;
+}
+#rightpart > div > div:first-child {
+    height: 56px;
+    min-width: 172px;
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -420px -25px;
+}
+#rightpart > div > div:last-child {
+    height: 56px;
+    min-width: 172px;
+    background: url(https://i1.lmsin.net/website_images/static-pages/brand_exp/brand2images/prod/Sprite_icons.svg) -594px -25px;
+}
+
+#VariousSections {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+#VariousSections > div > h6 {
+    color: #212121;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 12px;
+
+}
+#VariousSections > div > p {
+    color: #5d5e5c;
+    font-size: 16px;
+    margin: 6px;
+}
