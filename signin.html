@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        html , body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color:#FFFDE7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #container {
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-color: rgb(197, 176, 162);
+            padding: 32px;
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 4px;
+
+
+        }
+        #container input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+            outline: none;
+            padding: 18px 24px;
+            height: 56px;
+            font-size: 16px;
+            border-radius: 4px;
+            outline: none;
+            background-color: #F7F8F7;
+            color: #929391;
+            width: 325px;
+            border: 0px;
+            margin: 20px 0px;
+           
+        }
+        #submit {
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <form id="loginform">
+            <h1>Login</h1>
+            <div id="errormessage"></div>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <input type="submit" id="submit" placeholder="Continue">
+            <p><a href="/signup.html">Don't have an account? Create account</a></p>
+        </form>
+
+    </div>
+    
+</body>
+<script>
+    let myform=document.getElementById("loginform");
+    let errormessage=document.getElementById("errormessage");
+
+    let LSdata=JSON.parse(localStorage.getItem("logindata"))
+    if(LSdata==null){
+        LSdata=[];
+    }
+
+    myform.addEventListener("submit",function(e){
+        e.preventDefault();
+
+        let obj={
+            "username":myform.username.value,
+            "password":myform.password.value
+        }
+        console.log(obj);
+        let count=0;
+        for(let i=0;i<LSdata.length;i++){
+            if(LSdata[i]==obj){
+                count=1;
+                break;
+            }
+        }
+        if(count==0){
+            errormessage.innerHTML=null;
+            let mypara=document.createElement("p");
+            mypara.innerText="invalid username/password combination";
+            errormessage.append(mypara);
+
+        }else{
+            console.log("yes");
+            myform.innerHTML=null;
+            let div=document.createElement("div");
+            let button=document.createElement("button");
+            let mya=document.createElement("a");
+            mya.setAttribute("href","/index.html")
+            button.append(mya);
+            div.append(button);
+            myform.append(div);
+
+        }
+    })
+
+
+</script>
+</html>
